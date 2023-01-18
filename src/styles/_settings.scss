@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600&family=Bellefair&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+// CSS for all the pages titles
+
+.destination,
+.crew,
+.technology {
+  &_title {
+    margin: 76px 0 97px 166px;
+    display: flex;
+    align-items: center;
+    &_number {
+      font-family: "Barlow Condensed";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+
+      letter-spacing: 4.72px;
+
+      color: #ffffff;
+
+      mix-blend-mode: normal;
+      opacity: 0.25;
+    }
+    &_text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 34px;
+      text-transform: uppercase;
+      letter-spacing: 4.72px;
+      color: #fff;
+      margin-left: 28px;
+    }
+  }
+}

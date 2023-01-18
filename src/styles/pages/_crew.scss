@@ -1,0 +1,75 @@
+.crew {
+  background: url(../../assets/crew/background-crew-desktop.jpg) no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  &_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_text {
+      max-width: 615px;
+      margin-left: 165px;
+      h2 {
+        font-family: "Bellefair";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        color: #ffffff;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+      }
+      h1 {
+        font-family: "Bellefair";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 64px;
+        text-transform: uppercase;
+        margin-bottom: 27px;
+        color: #ffffff;
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: #d0d6f9;
+        max-width: 444px;
+        height: 160px;
+        margin-bottom: 120px;
+      }
+      &_points {
+        ul {
+          display: flex;
+          gap: 24px;
+          li {
+            .active {
+              opacity: 1 !important;
+              background-color: #ffffff;
+            }
+          }
+          button {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            opacity: 0.17;
+            border: none;
+            cursor: pointer;
+            &:hover {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+    &_membersImg {
+      position: absolute;
+      bottom: 0;
+      right: 137px;
+    }
+  }
+}

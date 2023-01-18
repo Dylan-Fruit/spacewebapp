@@ -1,0 +1,85 @@
+.technology {
+  background: url(../../assets/technology/background-technology-desktop.jpg)
+    no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  &_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_text {
+      display: flex;
+      margin-left: 165px;
+      &_button {
+        margin-right: 80px;
+        #paddingbtn {
+          padding: 22px 35.5px;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 32px;
+          li {
+            .active {
+              background-color: #ffffff;
+              color: #0b0d17;
+              border: none !important;
+            }
+          }
+          button {
+            font-family: "Bellefair";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 37px;
+            text-align: center;
+            letter-spacing: 2px;
+            padding: 22px 33px;
+            background: none;
+            border-color: rgba(255, 255, 255, 0.25);
+            color: #ffffff;
+            border-radius: 50%;
+            cursor: pointer;
+            &:hover {
+              border-color: #ffffff;
+            }
+          }
+        }
+      }
+      &_area {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 470px;
+        h2 {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 2.7px;
+          color: #d0d6f9;
+          margin-bottom: 11px;
+          text-transform: uppercase;
+        }
+        h1 {
+          font-family: "Bellefair";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 56px;
+          line-height: 64px;
+          margin-bottom: 17px;
+          color: #ffffff;
+          text-transform: uppercase;
+        }
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          color: #d0d6f9;
+        }
+      }
+    }
+  }
+}

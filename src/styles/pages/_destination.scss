@@ -1,0 +1,123 @@
+.destination {
+  background: url(../../assets/destination/background-destination-desktop.jpg)
+    no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  &_content {
+    &::after {
+      position: absolute;
+      left: 0.22%;
+      right: 0%;
+      top: 80.93%;
+      bottom: 18.86%;
+      height: 1px;
+      background: #383b4b;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 163px 112px 230px;
+    &_planet {
+      margin-right: 0;
+    }
+    &_text {
+      .line {
+        height: 1px;
+        width: 444px;
+        background: #383b4b;
+        margin-top: 54px;
+      }
+      &_name {
+        margin-bottom: 37px;
+
+        ul {
+          display: flex;
+          gap: 36px;
+          margin-bottom: 12px;
+          li {
+            .active {
+              color: #fff;
+              border-bottom: solid 3px #fff !important;
+            }
+          }
+          button {
+            background: none;
+            border: none;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 2.7px;
+            text-transform: uppercase;
+            color: #d0d6f9;
+            cursor: pointer;
+            padding-bottom: 15px;
+            &:hover {
+              border-bottom: solid 3px rgba(255, 255, 255, 0.5);
+            }
+          }
+        }
+      }
+      &_planetName {
+        h1 {
+          font-family: "Bellefair", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 100px;
+          line-height: 115px;
+          color: #fff;
+          text-transform: uppercase;
+        }
+      }
+      &_description {
+        width: 444px;
+        p {
+          font-family: "Barlow";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          color: #d0d6f9;
+          height: 128px;
+        }
+      }
+      &_travel {
+        margin-top: 28px;
+        display: flex;
+        align-items: center;
+        &_distance,
+        &_time {
+          text-transform: uppercase;
+          margin-right: 79px;
+          span {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 2.3625px;
+            color: #d0d6f9;
+          }
+          p {
+            font-family: "Bellefair";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 32px;
+            color: #fff;
+            margin-top: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.titan {
+  display: none;
+}
+.europa {
+  display: none;
+}
+.mars {
+  display: none;
+}
