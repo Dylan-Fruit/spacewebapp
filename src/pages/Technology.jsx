@@ -10,9 +10,9 @@ const Technology = () => {
   const { name, images, description } = techno[value];
 
   useEffect(() => {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 1200) {
       setIsMobile(true);
-    } else if (window.innerWidth >= 768) {
+    } else if (window.innerWidth >= 1201) {
       setIsMobile(false);
     }
   }, []);

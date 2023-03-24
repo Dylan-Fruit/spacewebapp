@@ -1,25 +1,27 @@
 .header {
-  &::before {
-    content: "";
-    background-color: #fff;
-    opacity: 0.5;
-    position: absolute;
-    width: 473px;
-    height: 1px;
-    left: 615px;
-    top: 88px;
-  }
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px 0 0 55px;
   &-nav {
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(40.7742px);
-    padding: 39px 165px 38px 123px;
-    ul {
+    &-desktop {
       display: flex;
       gap: 48px;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(40.7742px);
+      padding: 39px 165px 38px 123px;
+      z-index: 1;
+      &::before {
+        content: "";
+        background-color: #fff;
+        opacity: 0.5;
+        position: absolute;
+        width: 473px;
+        height: 1px;
+        left: -398px;
+        top: 50px;
+        z-index: 2;
+      }
     }
     &-li {
       position: relative;
@@ -58,5 +60,8 @@
         }
       }
     }
+  }
+  &-mobile-btn {
+    display: none;
   }
 }

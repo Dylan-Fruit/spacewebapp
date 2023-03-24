@@ -1,0 +1,489 @@
+@media screen and (max-width: 1513px) {
+  .header {
+    padding: 25px 0 0 55px;
+  }
+
+  .crew {
+    &_title {
+      margin: 40px 0 120px 166px;
+    }
+    &_content {
+      &_text {
+        p {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  .destination {
+    padding-bottom: 50px;
+    &_title {
+      margin: 40px 0 40px 166px;
+    }
+    &_content {
+      margin: 0 163px 0 230px;
+    }
+  }
+  .technology {
+    &_title {
+      margin: 40px 0 20px 166px;
+    }
+    &_content {
+      &_images {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .header {
+    padding: 0 0 0 55px;
+
+    &-nav {
+      &-desktop {
+        height: 96px;
+        padding: 39px 40px 38px 40px;
+        &::before {
+          display: none;
+        }
+      }
+      &-li {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .home {
+    background: url(../../assets/home/background-home-tablet.jpg) no-repeat;
+    background-size: cover;
+    &-content {
+      align-items: center;
+      flex-direction: column;
+    }
+    &-text {
+      align-items: center;
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .destination,
+  .crew,
+  .technology {
+    &_title {
+      margin: 40px 0 40px 52px;
+      &_number,
+      &_text {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .destination {
+    background: url(../../assets/destination/background-destination-tablet.jpg)
+      no-repeat;
+    background-size: cover;
+    &_content {
+      margin: 0;
+      flex-direction: column;
+      &_planets {
+        margin-bottom: 53px;
+        img {
+          width: 300px;
+          height: 300px;
+        }
+      }
+      &_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &_name {
+          margin-bottom: 20px;
+        }
+        &_planetName {
+          h1 {
+            font-size: 80px;
+          }
+        }
+        &_description {
+          width: 600px;
+          p {
+            text-align: center;
+            font-size: 16px;
+          }
+        }
+      }
+      .line {
+        width: 600px;
+      }
+    }
+  }
+
+  .crew {
+    background: url(../../assets/crew/background-crew-tablet.jpg) no-repeat;
+    background-size: cover;
+    &_content {
+      justify-content: center;
+      &_text {
+        margin: 0;
+        text-align: center;
+        h2 {
+          font-size: 24px;
+          margin: 0;
+        }
+        h1 {
+          font-size: 40px;
+          margin-bottom: 16px;
+        }
+        p {
+          font-size: 16px;
+          margin: 0 0 40px 0;
+        }
+        &_points {
+          ul {
+            justify-content: center;
+          }
+        }
+      }
+      &_membersImg {
+        img {
+          width: 456px;
+          height: 572px;
+        }
+      }
+    }
+  }
+
+  .technology {
+    background: url(../../assets/technology/background-technology-tablet.jpg)
+      no-repeat;
+    background-size: cover;
+    &_content {
+      flex-direction: column-reverse;
+      &_text {
+        flex-direction: column;
+        margin: 0;
+        &_button {
+          margin: 0 0 44px 0;
+          ul {
+            flex-direction: row;
+            justify-content: center;
+            gap: 16px;
+          }
+        }
+        &_area {
+          text-align: center;
+          h1 {
+            font-size: 40px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 20px 20px 0 20px;
+    &-nav {
+      &-desktop {
+        display: none;
+      }
+      &-li {
+        &-mobile {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 2.7px;
+          margin-bottom: 32px;
+          display: flex;
+          &-links {
+            color: #fff;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              height: 100%;
+              width: 0.1875rem;
+              left: 238px;
+              background-color: #fff;
+              opacity: 0;
+              transition: opacity 0.3s;
+              z-index: 2;
+            }
+          }
+          .active {
+            &::after {
+              opacity: 1;
+            }
+          }
+          span {
+            margin-right: 12px;
+            width: 17px;
+            display: inline-flex;
+          }
+        }
+      }
+    }
+    &-mobile {
+      &-btn {
+        display: flex;
+        position: relative;
+        &-close {
+          z-index: 2;
+          position: fixed;
+          right: 20px;
+          top: 30px;
+        }
+      }
+    }
+    &-menu {
+      &-mobile {
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 70%;
+        z-index: 1;
+        padding: 118px 0 0 32px;
+      }
+    }
+    &-logo {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .home {
+    background: url(../../assets/home/background-home-mobile.jpg) no-repeat;
+    background-size: cover;
+    &-content {
+      align-items: center;
+      flex-direction: column;
+      margin: 0 20px;
+      justify-content: center;
+    }
+    &-text {
+      align-items: center;
+      width: inherit;
+      h5 {
+        font-size: 16px;
+        margin-top: 50px;
+      }
+      h1 {
+        line-height: inherit;
+        font-size: 80px;
+      }
+      p {
+        text-align: center;
+        font-size: 15px;
+      }
+    }
+    &-explore {
+      height: inherit;
+      width: inherit;
+      &-btn {
+        width: 150px;
+        height: 150px;
+        padding: 0;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .destination,
+  .crew,
+  .technology {
+    &_title {
+      margin: 24px 0 40px 0;
+      justify-content: center;
+      &_number,
+      &_text {
+        font-size: 16px;
+      }
+      &_text {
+        margin-left: 18px;
+      }
+    }
+  }
+
+  .destination {
+    background: url(../../assets/destination/background-destination-mobile.jpg)
+      no-repeat;
+    background-size: cover;
+    &_content {
+      margin: 0;
+      flex-direction: column;
+      &_planets {
+        margin-bottom: 53px;
+        img {
+          width: 170px;
+          height: 170px;
+        }
+      }
+      &_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &_name {
+          margin-bottom: 20px;
+          ul {
+            button {
+              font-size: 14px;
+            }
+          }
+        }
+        &_planetName {
+          h1 {
+            font-size: 56px;
+            line-height: inherit;
+          }
+        }
+        &_description {
+          width: 310px;
+          p {
+            text-align: center;
+            font-size: 15px;
+          }
+        }
+        &_travel {
+          flex-direction: column;
+          gap: 32px;
+          text-align: center;
+        }
+      }
+      .line {
+        width: 310px;
+      }
+    }
+  }
+
+  .crew {
+    background: url(../../assets/crew/background-crew-tablet.jpg) no-repeat;
+    background-size: cover;
+    &_content {
+      justify-content: center;
+      flex-direction: column-reverse;
+      &_text {
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        h2 {
+          font-size: 16px;
+          margin: 0;
+        }
+        h1 {
+          font-size: 24px;
+          margin-bottom: 16px;
+          line-height: inherit;
+        }
+        p {
+          font-size: 15px;
+          margin: 0 0 40px 0;
+          width: 327px;
+        }
+        &_points {
+          margin-bottom: 32px;
+          ul {
+            justify-content: center;
+          }
+        }
+      }
+      &_membersImg {
+        position: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 32px;
+        img {
+          width: 180px;
+          height: 223px;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 385px;
+          width: 327px;
+          height: 1px;
+          background-color: #383b4b;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .technology {
+    background: url(../../assets/technology/background-technology-mobile.jpg)
+      no-repeat;
+    background-size: cover;
+    &_content {
+      flex-direction: column-reverse;
+      &_text {
+        flex-direction: column;
+        margin: 0;
+        &_button {
+          margin: 0 0 44px 0;
+          ul {
+            flex-direction: row;
+            justify-content: center;
+            gap: 16px;
+            button {
+              padding: inherit;
+              width: 40px;
+              height: 40px;
+              font-size: 16px;
+            }
+          }
+          #paddingbtn {
+            padding: inherit;
+          }
+        }
+        &_area {
+          text-align: center;
+          margin-bottom: 100px;
+          h2 {
+            font-size: 14px;
+          }
+          h1 {
+            font-size: 24px;
+            line-height: inherit;
+          }
+          p {
+            font-size: 15px;
+            width: 327px;
+          }
+        }
+      }
+      &_images {
+        img {
+          width: 375px;
+          height: 170px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (width: 375px) {
+  .header-nav-li-mobile {
+    &-links {
+      &::after {
+        left: 227px;
+      }
+    }
+  }
+}

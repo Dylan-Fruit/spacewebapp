@@ -78,17 +78,16 @@
           font-size: 18px;
           line-height: 32px;
           color: #d0d6f9;
-          height: 128px;
         }
       }
       &_travel {
         margin-top: 28px;
         display: flex;
         align-items: center;
+        gap: 78px;
         &_distance,
         &_time {
           text-transform: uppercase;
-          margin-right: 79px;
           span {
             font-style: normal;
             font-weight: 400;

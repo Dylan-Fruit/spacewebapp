@@ -2,6 +2,7 @@
   background: url(../../assets/crew/background-crew-desktop.jpg) no-repeat;
   background-size: cover;
   min-height: 100vh;
+  position: relative;
   &_content {
     display: flex;
     align-items: center;
@@ -38,7 +39,6 @@
         line-height: 32px;
         color: #d0d6f9;
         max-width: 444px;
-        height: 160px;
         margin-bottom: 120px;
       }
       &_points {
